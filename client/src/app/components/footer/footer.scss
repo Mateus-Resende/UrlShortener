@@ -1,0 +1,82 @@
+.footer-centered {
+	background-color: #fff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal 18px sans-serif;
+
+	padding: 45px;
+	margin-top: 80px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.footer-centered .footer-author{
+	color:  #333;
+	font-size: 24px;
+	margin: 0;
+}
+
+.footer-centered .footer-creation-date{
+	color:  #333;
+	font-size: 14px;
+	margin: 0;
+}
+
+.footer-centered .footer-icons{
+	list-style: none;
+	font-weight: bold;
+	color:  #ffffff;
+	padding: 35px 0 23px;
+	margin: 0;
+}
+
+.footer-centered .footer-icons a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer-centered .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #AA1423;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+@media (max-width: 600px) {
+
+	.footer-centered{
+		padding: 35px;
+	}
+
+	.footer-centered .footer-author{
+		font-size: 18px;
+	}
+
+	.footer-centered .footer-creation-date{
+		font-size: 12px;
+	}
+
+	.footer-centered .footer-icons{
+		font-size: 14px;
+		padding: 25px 0 20px;
+	}
+
+	.footer-centered .footer-icons a{
+		line-height: 1.8;
+	}
+}

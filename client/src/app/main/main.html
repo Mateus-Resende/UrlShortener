@@ -1,0 +1,81 @@
+<div>
+    <div id="navbar">
+        <acme-navbar></acme-navbar>
+    </div>
+    <div id="body">
+        <div class="content text-center">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h1 class="title">Shorten your urls!</h1>
+                        <h3 class="description">Links are long. Shorten the links you want to share, and follow while they travel through the internet.</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="shorten-urls-input">
+                            <div class="input-group">
+                                <input type="text" class="long-url-input" ng-model="longUrl" placeholder="Type your url here...">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-shorten-url" ng-click="createShortLink()" type="button">Shorten!</button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </div><!-- /long-url-input -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+
+                <div class="row" ng-if="shortUrl">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="short-url-result">
+                            <h3 class="description">Your short url: {{shortUrl}}</h3>
+                            <h3 class="description">Current hits: {{currentHits}}</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="top5-hits">
+            <div class="container">
+
+                <div class="row">
+                    <h1 class="sub-title">TOP 5</h1>
+                </div>
+
+                <div class="row">
+                    <ul class="top-5-short-urls-list" type="none">
+                        <li class="top-5-short-urls-item col-sm-12 col-md-12 col-lg-12" ng-repeat="url in urls">
+                            <a class="short-url" href="http://localhost:3000/{{url.short_url}}">{{url.short_url}}</a>  <span class="hits">{{url.hits}}</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="arrow-separator">                    
+                </div>
+            </div>
+        </div>
+
+        <div class="total-hits">
+            <div class="container">
+
+                <div class="row">
+                    <h1 class="sub-title">HITS</h1>
+                </div>
+                <div class="row">
+                    <div class="count-separator">
+                        <h1 class="total-hits-count">{{total_hits}}</h1>
+                    </div>
+                    <h3 class="total-hits-text">Clicks on links</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <acme-footer></acme-footer>
+    </div>
+</div>

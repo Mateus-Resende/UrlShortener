@@ -1,0 +1,127 @@
+$font-orange: #FA6C16;
+$font-red: #AA1423;
+
+.content {
+    margin: 0;
+    background-color: rgba(170, 20, 35, 0.9);
+    padding: 150px 0;
+    height: 100%;
+    color: #fff;
+}
+
+.shorten-urls-input {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.description {
+    width: 75%;
+    margin: 15px auto;   
+}
+
+.long-url-input, input, select, textarea {
+    border: none;
+    border-bottom: 3px solid $font-orange;
+    width: 95%;
+    height: 35px;
+    padding: 0 5px;
+    background-color: transparent;
+    color: $font-orange;
+    font-weight: bold;
+    
+}
+
+::-webkit-input-placeholder {
+    color: $font-orange;
+    opacity: 0.8;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    color: $font-orange;
+}
+
+
+.btn-shorten-url {
+    background-color: #fa6c16;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 7px 20px;
+}
+
+.top5-hits {
+    background-color: #fff;
+    color: $font-red;
+    text-align: center;
+    margin: 50px;
+}
+
+.sub-title {
+    color: $font-red;
+    font-weight: 400;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.top-5-short-urls-list {
+    width: 50%;
+    margin: auto;
+}
+
+.top-5-short-urls-item {
+    padding: 0 0 5px 0;
+    margin: 5px 0px;
+
+    border-bottom: 1px solid #eee;
+}
+
+a.short-url {
+    float: left;
+    color: #AA1423;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+span.hits {
+    float: right;
+    color: #777;
+    font-size: 1.2em;
+}
+
+.arrow-separator {
+    width: 50px;
+    height: 50px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: auto;
+    overflow: overlay;
+    background-color: #fff;
+    position: relative;
+    top: 76px;
+}
+
+.total-hits {
+    padding: 75px 0;
+    margin: 15px 0;
+    background-color: #eee;
+    text-align: center;
+}
+
+.total-hits-count {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    color: $font-red;
+}
+
+.count-separator {
+    display: inline-block;
+}
