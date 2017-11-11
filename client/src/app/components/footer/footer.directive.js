@@ -16,7 +16,7 @@ class FooterController {
   constructor () {
     'ngInject';
 
-    this.creationDate = "Nov 20th, 2016";
+    this.creationDate = "Nov 11th, 2017";
     this.author = "Mateus A. M. Resende";
   }
 }

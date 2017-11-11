@@ -23,16 +23,14 @@ export class MainController {
 
     activate($scope, $http) {
         $scope.urls = [];
-        $http.get('./api/url_data.json').success(function(data) {
+        $http.get('./api/url_data.json').success(function (data) {
             $scope.urls = data;
         });
 
         $scope.total_hits;
-        $http.get('./api/total_hits.json').success(function(data) {
+        $http.get('./api/total_hits.json').success(function (data) {
             $scope.total_hits = data;
-        })
+        });
     }
-
-
 
 }
