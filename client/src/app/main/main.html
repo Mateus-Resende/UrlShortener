@@ -33,7 +33,7 @@
                             <h3 class="description">Current hits: {{currentHits}}</h3>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -49,12 +49,17 @@
                 <div class="row">
                     <ul class="top-5-short-urls-list" type="none">
                         <li class="top-5-short-urls-item col-sm-12 col-md-12 col-lg-12" ng-repeat="url in urls">
-                            <a class="short-url" href="http://localhost:3000/{{url.short_url}}">{{url.short_url}}</a>  <span class="hits">{{url.hits}}</span>
+                            <div class="col-sm-8 col-md-8 col-lg-8">
+                              <a class="short-url" href="http://localhost:3000/{{url.short_url}}">{{url.short_url}}</a>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                              <span class="hits">{{url.hits}}</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
 
-                <div class="arrow-separator">                    
+                <div class="arrow-separator">
                 </div>
             </div>
         </div>

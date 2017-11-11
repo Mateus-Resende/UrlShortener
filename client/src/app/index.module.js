@@ -11,4 +11,4 @@ angular.module('urlShortener', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize
     .run(runBlock)
     .controller('MainController', MainController)
     .directive('acmeNavbar', NavbarDirective)
-    .directive('acmeFooter', FooterDirective)
+    .directive('acmeFooter', FooterDirective);

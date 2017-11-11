@@ -1,5 +1,7 @@
 $font-orange: #FA6C16;
 $font-red: #AA1423;
+$font-white: #FFFFFF;
+
 
 .content {
     margin: 0;
@@ -21,7 +23,8 @@ $font-red: #AA1423;
 
 .description {
     width: 75%;
-    margin: 15px auto;   
+    margin: 15px auto;
+    font-weight: 400;
 }
 
 .long-url-input, input, select, textarea {
@@ -31,9 +34,17 @@ $font-red: #AA1423;
     height: 35px;
     padding: 0 5px;
     background-color: transparent;
-    color: $font-orange;
-    font-weight: bold;
-    
+    color: $font-white;
+    font-weight: 400;
+  &:focus {
+    outline: none;
+    color: $font-white;
+  }
+
+  &::placeholder {
+    color: #f7eded;
+  }
+
 }
 
 ::-webkit-input-placeholder {
@@ -41,22 +52,17 @@ $font-red: #AA1423;
     opacity: 0.8;
 }
 
-textarea:focus, input:focus{
-    outline: none;
-    color: $font-orange;
-}
-
 
 .btn-shorten-url {
-    background-color: #fa6c16;
-    color: #FFF;
-    font-weight: bold;
+    background-color: $font-orange;
+    color: $font-white;
+    font-weight: 600;
     border-radius: 0;
     padding: 7px 20px;
 }
 
 .top5-hits {
-    background-color: #fff;
+    background-color: $font-white;
     color: $font-red;
     text-align: center;
     margin: 50px;
@@ -70,22 +76,30 @@ textarea:focus, input:focus{
 }
 
 .top-5-short-urls-list {
-    width: 50%;
+    width: 60%;
     margin: auto;
+    @media only screen and(max-width: 1084px) {
+        width: 80%;
+    }
 }
+
 
 .top-5-short-urls-item {
     padding: 0 0 5px 0;
     margin: 5px 0px;
-
     border-bottom: 1px solid #eee;
+    @media only screen and(max-width: 1084px) {
+        padding: 0 0 14px 0;
+        margin: 25px 0;
+    }
 }
 
 a.short-url {
     float: left;
     color: #AA1423;
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 600;
+    position: relative;
 }
 
 span.hits {
